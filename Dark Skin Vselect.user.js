@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         Dark Skin Vselect
-// @version      2.1.10
+// @version      2.1.11
 // @description  Dark Skin for Vselect
 // @author       tpayne@velocity.org
 // @match        https://vselect.com/*
 // @exclude      https://vselect.com/monitors/tm/*
 // @exclude      https://vselect.com/wiki/*
 // @exclude      https://vselect.com/support/chat/*
+// @updateURL	 https://github.com/RikuAzhurlar/Dark-Vselect/raw/master/Dark%20Skin%20Vselect.user.js
 // @grant        none
 // ==/UserScript==
 
