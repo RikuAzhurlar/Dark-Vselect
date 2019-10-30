@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Dark Skin Vselect
-// @version      2.1.11
+// @version      2.1.12
 // @description  Dark Skin for Vselect
 // @author       tpayne@velocity.org
 // @match        https://vselect.com/*
@@ -88,8 +88,8 @@
         var a = document.querySelectorAll('.conflink');
         var bg1 = document.querySelectorAll('.bg1');
         var bg2 = document.querySelectorAll('.bg2, .nochild, .even_comment');
-        var tables = document.querySelectorAll('table');
-        var header = document.querySelector('.fixed-sub-heading-container');
+        var tables = document.querySelectorAll('table, td');
+        var header = document.querySelector('.fixed-sub-heading-container, .sticky-sub-heading-container');
         var title = document.querySelector('td[title]');
         if(header) {
             if(header.style.backgroundColor != "rgb(69, 69, 69)")
