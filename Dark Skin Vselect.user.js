@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Dark Skin Vselect
-// @version      2.1.12-dev
-// @description  Dark Skin for Vselect
-// @author       tpayne@velocity.org
+// @name         Dark Skin Vselect-dev
+// @version      2.1.13
+// @description  Dark Skin for Vselect - bleeding edge build 
+// @author       Dgraff@velocity.org / JJenkins@velocity.org
 // @match        https://vselect.com/*
 // @exclude      https://vselect.com/monitors/tm/*
 // @exclude      https://vselect.com/wiki/*
