@@ -1,8 +1,9 @@
 // ==UserScript==
 // @name         Dark Skin Vselect-dev
-// @version      2.1.15
+// @version      2.1.16
 // @description  Dark Skin for Vselect - bleeding edge build
 // @author       Dgraff@velocity.org / JJenkins@velocity.org / CCosby@velocity.org
+// @require https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js
 // @match        https://vselect.com/*
 // @exclude      https://vselect.com/monitors/tm/*
 // @exclude      https://vselect.com/wiki/*
