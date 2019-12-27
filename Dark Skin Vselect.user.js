@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dark Skin Vselect-dev
-// @version      2.1.13
-// @description  Dark Skin for Vselect - bleeding edge build 
+// @version      2.1.14
+// @description  Dark Skin for Vselect - bleeding edge build
 // @author       Dgraff@velocity.org / JJenkins@velocity.org
 // @match        https://vselect.com/*
 // @exclude      https://vselect.com/monitors/tm/*
@@ -16,7 +16,7 @@
 
 (function() {
     'use strict';
-	
+
 	function addGlobalStyle(css) {
     var head, style;
 
@@ -80,7 +80,7 @@
             if(container.style.backgroundColor != "rgb(69, 69, 69)")
                 container.style.backgroundColor = "#454545";
             if(container.style.color != "rgb(175, 175, 175)")
-                container.style.color = "#afafaf";                
+                container.style.color = "#afafaf";
         }
         var text = document.querySelectorAll('input[type=text], select, textarea, .entryheading, .divfield, .nrfield, .ticketseparator, option, .vselect, .ticket-entries');
         var heading = document.querySelectorAll('.heading, .flex-set, .odd_comment, .tech_status');
@@ -201,6 +201,32 @@
             }
         }
     }
-	addGlobalStyle(css)
+
+        var style = {
+        backgroundColor: "#454545",
+        color: "#f5f5f5"
+    };
+
+    console.log('CONTENT: '  );
+    console.log($('.content'));
+
+    $('.content').each(function() {
+        $(this).css(style);
+
+    });
+
+    $('table.ticket-entries').css(style);
+
+    $('div.ticket-entries').css(style);
+
+    //fix header
+    $('div.sticky-sub-heading-container').css(style);
+    $('div.fixed-sub-heading-container').css(style);
+
+
+
+
+
+    addGlobalStyle(css)
     setStyle();
 })();
